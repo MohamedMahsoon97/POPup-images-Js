@@ -1,0 +1,215 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.model
+{
+    position: relative;
+    /* margin-top: 100px; */
+}
+.model .headline
+{
+    padding-bottom: 30px;
+    padding-top: 80px;
+    color: #000;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+}
+.model .model-content
+{
+    display: flex;
+    justify-content: center;
+}
+.model .model-content > div
+{
+    margin: 20px;
+    width: 25%;
+    
+}
+.model .model-content > div .model-img
+{
+    overflow: hidden;
+    width: 100%;
+}
+.model .model-content > div .model-img img
+{
+    object-fit: cover;
+    transition: 1s all;
+    -webkit-transition: 1s all;
+    -moz-transition: 1s all;
+    -ms-transition: 1s all;
+    -o-transition: 1s all;
+    width: 100%;
+    cursor: pointer;
+}
+.model .model-content > div .model-img img:hover
+{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+.model .model-content > div .description
+{
+    text-align: center;
+    margin-top: 10px;
+}
+.model .model-content > div .description span
+{
+    color: #ff2020;
+}
+
+.box-model
+{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 760px;
+    background-color: rgba(0, 0, 0, .55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    transform: scale(0,0);
+    -webkit-transform: scale(0,0);
+    -moz-transform: scale(0,0);
+    -ms-transform: scale(0,0);
+    -o-transform: scale(0,0);
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+}
+.box-model .box-img
+{
+    position: relative;
+    width: 700px;
+}
+.box-model .box-img img
+{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+.box-model .box-img span
+{
+    position: absolute;
+    cursor: pointer;
+}
+.box-model .box-img span i
+{
+    font-size: 25px;
+    font-weight: 900;
+}
+.box-model .box-img #close
+{
+    top: 15px;
+    right: 15px;
+}
+.box-model .box-img #prev
+{
+    top: 50%;
+    left: 10px;
+}
+.box-model .box-img #next
+{
+    top: 50%;
+    right: 10px;
+}
+.box-model .box-img img
+{
+    object-fit: cover;
+}
+/* -------------------------- End New Arrival section ------------------------------- */
+
+/* -------------------------- Start media query New Arrival section ------------------------------- */
+@media (max-width:1100px) {
+    .model
+    {
+        width: 100%;
+    }
+    .model .headline
+    {
+        width: 100%;
+        padding-left: 0px;
+        text-align: center;
+        font-size: 35px;
+    }
+    .model .model-content
+    {
+        width: 100%;
+        display: flex;
+        /* flex-flow: row wrap; */
+    }
+    .model .model-content > div
+    {
+        width: 30%;
+    }
+    .model .model-content > div .model-img
+    {
+        width: 100%;
+        
+    }
+}
+@media (max-width:991px) {
+    .model
+    {
+        width: 100%;
+    }
+    .model .headline
+    {
+        width: 100%;
+        padding-left: 0px;
+        text-align: center;
+        font-size: 35px;
+    }
+    .model .model-content
+    {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .model .model-content > div
+    {
+        width: 44%;
+    }
+    .model .model-content > div .model-img
+    {
+        width: 100%;
+        
+    }
+}
+@media (max-width: 767px) {
+    .model
+    {
+        width: 100%;
+    }
+    .model .headline
+    {
+        width: 100%;
+        padding-left: 0px;
+        text-align: center;
+        font-size: 35px;
+    }
+    .model .model-content
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .model .model-content > div
+    {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+/* -------------------------- End media query New Arrival section --------------------------------- */
